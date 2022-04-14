@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.pi_daca.databinding.FragmentoHomeBinding
 
 // teste versionamento
+// teste caco
 
 class FragmentoHome : Fragment() {
     lateinit var binding: FragmentoHomeBinding
