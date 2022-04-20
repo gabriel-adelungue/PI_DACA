@@ -8,14 +8,15 @@
     tools:context=".FragmentoHome">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/welcomeNameId"
         android:layout_width="184dp"
         android:layout_height="166dp"
         android:background="#F7941E"
         android:fontFamily="sans-serif"
         android:gravity="center_vertical"
-        android:text="Bem-vindo,                         João"
-        android:textAlignment="center"
+        android:paddingStart="32dp"
+        android:text="Bem-vindo,\nJoão"
+        android:textAlignment="viewStart"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -23,13 +24,47 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="263dp"
-        android:layout_height="541dp"
-        android:layout_marginStart="217dp"
+        android:id="@+id/welcomeImageViewId"
+        android:layout_width="237dp"
+        android:layout_height="166dp"
+        android:scaleType="fitXY"
         android:src="@drawable/senac_biblioteca"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        tools:layout_editor_absoluteY="-193dp" />
+        app:layout_constraintStart_toEndOf="@+id/welcomeNameId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollViewLastInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeImageViewId">
+
+        <TextView
+            android:id="@+id/lastInfoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:paddingStart="32"
+            android:text="Útimas Informações"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLastInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
