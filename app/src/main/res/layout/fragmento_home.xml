@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentoHome">
+    tools:context=".fragments.FragmentoHome">
 
     <TextView
         android:id="@+id/welcomeNameId"
@@ -21,7 +21,8 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/welcomeImageViewId"
@@ -38,17 +39,20 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="1dp"
+        android:paddingStart="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeImageViewId">
+        app:layout_constraintTop_toBottomOf="@+id/welcomeImageViewId"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/lastInfoId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:paddingStart="32"
+            android:paddingStart="32dp"
             android:text="Útimas Informações"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"

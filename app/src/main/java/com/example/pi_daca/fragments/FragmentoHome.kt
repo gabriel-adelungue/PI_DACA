@@ -1,4 +1,4 @@
-package com.example.pi_daca
+package com.example.pi_daca.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.pi_daca.databinding.FragmentoHomeBinding
 
-// teste versionamento
 
 class FragmentoHome : Fragment() {
     lateinit var binding: FragmentoHomeBinding
