@@ -11,9 +11,6 @@
         android:theme="@style/Theme.PI_DACA">
         <activity
             android:name=".activitys.FaqActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.TesteViews"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

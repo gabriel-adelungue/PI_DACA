@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Tria-0148/StudioProjects/PI_DACA/app/src/main/res/drawable/computer.xml" value="0.197" />
-        <entry key="..\:/Users/Tria-0148/StudioProjects/PI_DACA/app/src/main/res/layout/fragmento_home.xml" value="0.25" />
-        <entry key="..\:/Users/Tria-0148/StudioProjects/PI_DACA/app/src/main/res/layout/fragmento_report.xml" value="0.1" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/activity_faq.xml" value="0.1" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/card_item.xml" value="0.13903985507246377" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/fragmento_home.xml" value="0.13903985507246377" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/fragmento_report.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/activity_teste_views.xml" value="0.33" />
         <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/card_item.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/fragmento_home.xml" value="0.25" />

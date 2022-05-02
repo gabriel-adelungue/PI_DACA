@@ -13,5 +13,7 @@ class FaqActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFaqBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
     }
 }
