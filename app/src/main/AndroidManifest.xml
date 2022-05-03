@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PI_DACA">
         <activity
-            android:name=".TesteViews"
+            android:name=".activitys.FaqActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
