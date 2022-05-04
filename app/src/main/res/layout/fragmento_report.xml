@@ -10,65 +10,67 @@
     tools:context=".fragments.FragmentoReport">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewReport"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="32dp"
         android:elevation="8dp"
         android:text="Reclamações "
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonInfra"
-        android:layout_width="120dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="32dp"
+        android:id="@+id/buttonMaintance"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="48dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
-        android:drawableBottom="@drawable/infra"
-        android:enabled="true"
-        android:rotationX="0"
-        android:scrollbarSize="4dp"
-        android:text="Infra-estrutura"
+        android:paddingTop="100dp"
+        android:paddingEnd="45dp"
+        android:text="Manutenção"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewReport" />
 
     <Button
-        android:id="@+id/buttonLab"
-        android:layout_width="120dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:id="@+id/buttonAdm"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
-        android:drawableBottom="@drawable/desktop"
-        android:text="Laboratório"
+        android:paddingTop="100dp"
+        android:paddingEnd="25dp"
+        android:text="Administração"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClean" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMaintance" />
 
     <Button
         android:id="@+id/buttonFood"
-        android:layout_width="120dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
-        android:drawableBottom="@drawable/fastfood"
+        android:paddingTop="100dp"
+        android:paddingEnd="35dp"
         android:text="Alimentação"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
@@ -77,45 +79,32 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonAdm" />
 
     <Button
-        android:id="@+id/buttonMaintance"
-        android:layout_width="120dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
+        android:id="@+id/buttonLab"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
-        android:drawableBottom="@drawable/manutencao"
-        android:text="Manutenção"
+        android:paddingTop="100dp"
+        android:paddingEnd="45dp"
+        android:text="Laboratório"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
-
-    <Button
-        android:id="@+id/buttonAdm"
-        android:layout_width="120dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:background="#F7941E"
-        android:backgroundTint="#F7941E"
-        android:drawableBottom="@drawable/adm"
-        android:text="Administração"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMaintance" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClean" />
 
     <Button
         android:id="@+id/buttonClean"
-        android:layout_width="120dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
-        android:drawableBottom="@drawable/cleaning"
+        android:paddingTop="100dp"
+        android:paddingEnd="75dp"
         android:text="Limpeza"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
@@ -123,15 +112,93 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonInfra" />
 
+    <Button
+
+        android:id="@+id/buttonInfra"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="64dp"
+        android:background="#F7941E"
+        android:backgroundTint="#F7941E"
+        android:enabled="true"
+        android:paddingTop="100dp"
+        android:paddingRight="15dp"
+        android:rotationX="0"
+        android:scrollbarSize="4dp"
+        android:text="Infra-estrutura"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewReport" />
+
     <SearchView
-        android:id="@+id/searchView"
+
+        android:id="@+id/searchViewReport"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewReport" />
+
+    <ImageView
+        android:id="@+id/imageViewInfra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:src="@drawable/infra"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <ImageView
+        android:id="@+id/imageViewMaintance"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:src="@drawable/manutencao"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <ImageView
+        android:id="@+id/imageViewClean"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:elevation="2dp"
+        android:src="@drawable/cleaning"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <ImageView
+        android:elevation="2dp"
+        android:id="@+id/imageViewAdm"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/adm"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <ImageView
+        android:id="@+id/imageViewlab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:src="@drawable/desktop"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="553dp" />
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:src="@drawable/fastfood"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="553dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
