@@ -7,27 +7,27 @@
     tools:context=".formFragmento">
 
     <TextView
-        android:id="@+id/textCategoria"
+        android:id="@+id/textCategoriaForm"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="24dp"
         android:text="Escreve a Categoria da reclamação"
         android:textColor="#040303"
-        app:layout_constraintBottom_toTopOf="@+id/editCategoria"
+        app:layout_constraintBottom_toTopOf="@+id/editCategoriaForm"
         tools:layout_editor_absoluteX="32dp" />
 
     <TextView
-        android:id="@+id/textCategoria4"
+        android:id="@+id/textDescricaoForm"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:layout_marginBottom="16dp"
         android:text="Descrição do ocorrido"
         android:textColor="#040303"
-        app:layout_constraintBottom_toTopOf="@+id/editDescricao"
+        app:layout_constraintBottom_toTopOf="@+id/editDescricaoForm"
         tools:layout_editor_absoluteX="32dp" />
 
     <EditText
-        android:id="@+id/editDescricao"
+        android:id="@+id/editDescricaoForm"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
@@ -40,11 +40,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Reclamacaoform"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormTitle"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/Reclamacaoform"
+        android:id="@+id/textViewFormTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Formulario de Reclamação"
@@ -55,7 +55,7 @@
         android:visibility="visible" />
 
     <EditText
-        android:id="@+id/editCategoria"
+        android:id="@+id/editCategoriaForm"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -66,10 +66,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Reclamacaoform" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormTitle" />
 
     <Button
-        android:id="@+id/buttonEnvia"
+        android:id="@+id/buttonEnviarForm"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -77,13 +77,13 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:background="#F7941E"
-        android:text="Envia"
+        android:text="Enviar"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDescricao" />
+        app:layout_constraintTop_toBottomOf="@+id/editDescricaoForm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
