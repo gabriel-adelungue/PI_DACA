@@ -10,9 +10,10 @@
         android:id="@+id/textCategoriaForm"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
-        android:text="Escreve a Categoria da reclamação"
+        android:layout_marginBottom="16dp"
+        android:text="Selecione a Categoria da Reclamação"
         android:textColor="#040303"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editCategoriaForm"
         tools:layout_editor_absoluteX="32dp" />
 
@@ -20,11 +21,13 @@
         android:id="@+id/textDescricaoForm"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
         android:text="Descrição do ocorrido"
         android:textColor="#040303"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editDescricaoForm"
-        tools:layout_editor_absoluteX="32dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editDescricaoForm"
@@ -47,12 +50,15 @@
         android:id="@+id/textViewFormTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="Formulario de Reclamação"
         android:textAlignment="center"
-        android:textColor="#F7941E"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:visibility="visible" />
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/editCategoriaForm"
@@ -83,7 +89,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDescricaoForm" />
+        app:layout_constraintTop_toBottomOf="@+id/editDescricaoForm"
+        app:layout_constraintVertical_bias="0.166" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,21 +12,21 @@
         android:orientation="vertical" >
 
         <TextView
-        android:id="@+id/textViewFaqTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="32dp"
-        android:text="Perguntas Frequentes"
-        android:textAlignment="center"
-        android:textColor="#F7941E"
-        android:textSize="24sp"
-        android:textStyle="normal|bold"
-        app:emojiCompatEnabled="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/textViewFaqTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            android:text="Perguntas Frequentes"
+            android:textAlignment="center"
+            android:textColor="#F7941E"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            app:emojiCompatEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewP1"
@@ -302,7 +302,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F7941E"
-            android:text="Voltar" />
+            android:text="Voltar"
+            android:textColor="#FFFFFF" />
 
 
     </LinearLayout>

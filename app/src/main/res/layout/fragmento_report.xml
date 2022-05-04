@@ -20,7 +20,7 @@
         android:text="Reclamações "
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -148,13 +148,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewReport" />
 
     <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:src="@drawable/fastfood"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="561dp" />
+
+    <ImageView
         android:id="@+id/imageViewInfra"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:elevation="2dp"
         android:src="@drawable/infra"
         tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteY="239dp" />
 
     <ImageView
         android:id="@+id/imageViewMaintance"
@@ -163,7 +172,16 @@
         android:elevation="2dp"
         android:src="@drawable/manutencao"
         tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteY="239dp" />
+
+    <ImageView
+        android:id="@+id/imageViewAdm"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="2dp"
+        android:src="@drawable/adm"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="401dp" />
 
     <ImageView
         android:id="@+id/imageViewClean"
@@ -172,16 +190,7 @@
         android:elevation="2dp"
         android:src="@drawable/cleaning"
         tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="393dp" />
-
-    <ImageView
-        android:elevation="2dp"
-        android:id="@+id/imageViewAdm"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/adm"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="393dp" />
+        tools:layout_editor_absoluteY="401dp" />
 
     <ImageView
         android:id="@+id/imageViewlab"
@@ -190,15 +199,6 @@
         android:elevation="2dp"
         android:src="@drawable/desktop"
         tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="553dp" />
-
-    <ImageView
-        android:id="@+id/imageViewFood"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:elevation="2dp"
-        android:src="@drawable/fastfood"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="553dp" />
+        tools:layout_editor_absoluteY="561dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
