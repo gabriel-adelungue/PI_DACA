@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textViewFaqTitle"
@@ -28,97 +29,97 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewP1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="32dp"
-        android:text="P: As reclamacões são públicas?"
-        android:textColor="#F7941E"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFaqTitle" />
+        <TextView
+            android:id="@+id/textViewP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="32dp"
+            android:text="P: As reclamacões são públicas?"
+            android:textColor="#F7941E"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFaqTitle" />
 
-    <TextView
-        android:id="@+id/textViewR1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:text="R: Sim, as reclamações aparecem publicamente para todos."
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewP1" />
+        <TextView
+            android:id="@+id/textViewR1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:text="R: Sim, as reclamações aparecem publicamente para todos."
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewP1" />
 
-    <TextView
-        android:id="@+id/textViewP2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:text="P: Como criar o meu login?"
-        android:textColor="#F7941E"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewR1" />
+        <TextView
+            android:id="@+id/textViewP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:text="P: Como criar o meu login?"
+            android:textColor="#F7941E"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR1" />
 
-    <TextView
-        android:id="@+id/textViewR2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:text="R: Confira o passo a passo:\n
+        <TextView
+            android:id="@+id/textViewR2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:text="R: Confira o passo a passo:\n
     \n1.Acesse a opção Login/Área exclusiva no topo do nosso site à direita;\n
     \n2.Clique na opção Cadastre-se.\n
     \n3.Preencha o formulário. No campo Nome completo, digite o nome igual ao que está no seu documento, sem abreviações. No campo CPF, não use o CPF de outra pessoa.\n
     \n4.No fim da página, leia e aceite a Política de Privacidade do Senac e clique em Não sou um robô. Pronto! Você criou o seu login.\n"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewP2" />
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewP2" />
 
-    <TextView
-        android:id="@+id/textViewP3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:text="P: Esqueci o e-mail e a senha para acesso a área exclusiva do site."
-        android:textColor="#F7941E"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewR2" />
+        <TextView
+            android:id="@+id/textViewP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:text="P: Esqueci o e-mail e a senha para acesso a área exclusiva do site."
+            android:textColor="#F7941E"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR2" />
 
-    <TextView
-        android:id="@+id/textViewR3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
-        android:text="R: Selecione a opção Esqueceu sua senha? na opção Login/Área exclusiva.\n
+        <TextView
+            android:id="@+id/textViewR3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:text="R: Selecione a opção Esqueceu sua senha? na opção Login/Área exclusiva.\n
         \nSe deseja saber qual e-mail está cadastrado, informe seu CPF e data de nascimento. Você receberá, no seu e-mail cadastrado, uma mensagem com orientações para recuperação de senha.\n
         \nAgora, se você não solicitou uma nova senha e recebeu essa mensagem, não se preocupe. Essa mensagem foi enviada apenas para o seu e-mail, e só você tem acesso a ela.\n"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewP3" />
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewP3" />
 
         <TextView
             android:id="@+id/textViewP4"
@@ -300,7 +301,9 @@
         <Button
             android:id="@+id/buttonBackFaq"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
             android:backgroundTint="#F7941E"
             android:text="Voltar"
             android:textColor="#FFFFFF" />
