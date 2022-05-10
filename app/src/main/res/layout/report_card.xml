@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewTitleReport"
+            android:id="@+id/titleReport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -21,7 +21,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewDescReport"
+            android:id="@+id/descReport"
             android:layout_width="391dp"
             android:layout_height="60dp"
             android:layout_margin="8dp"
