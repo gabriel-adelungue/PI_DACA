@@ -17,13 +17,13 @@ class FragmentoReport : Fragment() {
 
     binding = FragmentoReportBinding.inflate(layoutInflater)
 
-    binding.buttonInfra.setOnClickListener{
-
-        val intent = Intent(this, FormActivity::class.java)
-
-
-
-    }
+//    binding.buttonInfra.setOnClickListener{
+//
+//        val intent = Intent(this, FormActivity::class.java)
+//
+//
+//
+//    }
         return binding.root
     }
 }
