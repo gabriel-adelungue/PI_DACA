@@ -14,7 +14,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
         android:elevation="8dp"
         android:text="Reclamações "
@@ -23,7 +23,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +32,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:elevation="8dp"
         android:text="Escolha abaixo a categoria da sua reclamação"
@@ -43,12 +43,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewReport" />
 
     <Button
         android:id="@+id/buttonMaintance"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="48dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
@@ -59,29 +60,12 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="229dp" />
-
-    <Button
-        android:id="@+id/buttonAdm"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="48dp"
-        android:background="#F7941E"
-        android:backgroundTint="#F7941E"
-        android:paddingTop="100dp"
-        android:paddingEnd="25dp"
-        android:text="Administração"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMaintance" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewReport2" />
 
     <Button
         android:id="@+id/buttonFood"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="48dp"
         android:background="#F7941E"
@@ -96,9 +80,48 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonAdm" />
 
     <Button
+
+        android:id="@+id/buttonInfra"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:background="#F7941E"
+        android:backgroundTint="#F7941E"
+        android:enabled="true"
+        android:paddingTop="100dp"
+        android:paddingRight="15dp"
+        android:rotationX="0"
+        android:scrollbarSize="4dp"
+        android:text="Infra-estrutura"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReport2" />
+
+    <Button
+        android:id="@+id/buttonClean"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#F7941E"
+        android:backgroundTint="#F7941E"
+        android:paddingTop="100dp"
+        android:paddingEnd="75dp"
+        android:text="Limpeza"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInfra" />
+
+    <Button
         android:id="@+id/buttonLab"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="20dp"
         android:background="#F7941E"
@@ -113,105 +136,20 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonClean" />
 
     <Button
-        android:id="@+id/buttonClean"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/buttonAdm"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
         android:paddingTop="100dp"
-        android:paddingEnd="75dp"
-        android:text="Limpeza"
+        android:paddingEnd="25dp"
+        android:text="Administração"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonInfra" />
-
-    <Button
-
-        android:id="@+id/buttonInfra"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="48dp"
-        android:background="#F7941E"
-        android:backgroundTint="#F7941E"
-        android:enabled="true"
-        android:paddingTop="100dp"
-        android:paddingRight="15dp"
-        android:rotationX="0"
-        android:scrollbarSize="4dp"
-        android:text="Infra-estrutura"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="229dp" />
-
-    <ImageView
-        android:id="@+id/imageViewFood"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="148dp"
-        android:elevation="2dp"
-        android:src="@drawable/fastfood"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewAdm" />
-
-    <ImageView
-        android:id="@+id/imageViewInfra"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="56dp"
-        android:elevation="2dp"
-        android:src="@drawable/infra"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="237dp" />
-
-    <ImageView
-        android:id="@+id/imageViewMaintance"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="148dp"
-        android:elevation="2dp"
-        android:src="@drawable/manutencao"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="237dp" />
-
-    <ImageView
-        android:id="@+id/imageViewAdm"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="148dp"
-        android:elevation="2dp"
-        android:src="@drawable/adm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewMaintance" />
-
-    <ImageView
-        android:id="@+id/imageViewClean"
-        android:layout_width="39dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="124dp"
-        android:elevation="2dp"
-        android:src="@drawable/cleaning"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewInfra" />
-
-    <ImageView
-        android:id="@+id/imageViewlab"
-        android:layout_width="39dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="120dp"
-        android:elevation="2dp"
-        android:src="@drawable/desktop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewClean" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMaintance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

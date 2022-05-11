@@ -10,12 +10,13 @@
         android:id="@+id/textCategoriaForm"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:text="Selecione a Categoria da Reclamação"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="20dp"
+        android:text="Categoria da Reclamação:"
         android:textColor="#040303"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editCategoriaForm"
-        tools:layout_editor_absoluteX="32dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textDescricaoForm"

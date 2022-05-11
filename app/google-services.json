@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384970884738",
+    "project_id": "pi-daca",
+    "storage_bucket": "pi-daca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384970884738:android:ab76c96e6e11990787569b",
+        "android_client_info": {
+          "package_name": "com.example.pi_daca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384970884738-mgol6nduai78ai80hpv83bf8j92mgdpi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHpt-72Gs2-xJmcT3XRRWDQRLlNGu_gSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384970884738-mgol6nduai78ai80hpv83bf8j92mgdpi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
