@@ -27,11 +27,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewReport2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:elevation="8dp"
+        android:text="Escolha abaixo a categoria da sua reclamação"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/buttonMaintance"
         android:layout_width="150dp"
         android:layout_height="140dp"
-        android:layout_marginTop="64dp"
         android:layout_marginEnd="48dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
@@ -42,7 +59,7 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchViewReport" />
+        tools:layout_editor_absoluteY="229dp" />
 
     <Button
         android:id="@+id/buttonAdm"
@@ -118,7 +135,6 @@
         android:layout_width="150dp"
         android:layout_height="140dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="64dp"
         android:background="#F7941E"
         android:backgroundTint="#F7941E"
         android:enabled="true"
@@ -132,73 +148,70 @@
         android:textStyle="bold"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchViewReport" />
-
-    <SearchView
-
-        android:id="@+id/searchViewReport"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewReport" />
+        tools:layout_editor_absoluteY="229dp" />
 
     <ImageView
         android:id="@+id/imageViewFood"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="148dp"
         android:elevation="2dp"
         android:src="@drawable/fastfood"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="561dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAdm" />
 
     <ImageView
         android:id="@+id/imageViewInfra"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="56dp"
         android:elevation="2dp"
         android:src="@drawable/infra"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="237dp" />
 
     <ImageView
         android:id="@+id/imageViewMaintance"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="148dp"
         android:elevation="2dp"
         android:src="@drawable/manutencao"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="237dp" />
 
     <ImageView
         android:id="@+id/imageViewAdm"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="148dp"
         android:elevation="2dp"
         android:src="@drawable/adm"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMaintance" />
 
     <ImageView
         android:id="@+id/imageViewClean"
         android:layout_width="39dp"
         android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="124dp"
         android:elevation="2dp"
         android:src="@drawable/cleaning"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInfra" />
 
     <ImageView
         android:id="@+id/imageViewlab"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="120dp"
         android:elevation="2dp"
         android:src="@drawable/desktop"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="561dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewClean" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
