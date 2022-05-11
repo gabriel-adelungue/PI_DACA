@@ -16,7 +16,7 @@ import com.example.pi_daca.databinding.ReportCardBinding
 class HomeFragmento : Fragment() {
     lateinit var binding: HomeFragmentoBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
+        binding = HomeFragmentoBinding.inflate(inflater)
         return binding.root
     }
 
