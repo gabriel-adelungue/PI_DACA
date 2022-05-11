@@ -13,6 +13,7 @@ class FormActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFormBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         binding.buttonEnviarForm.setOnClickListener{
             val cardReport = reportCardData(binding.editCategoriaForm.text.toString(),
