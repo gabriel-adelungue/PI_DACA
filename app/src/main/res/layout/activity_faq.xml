@@ -298,16 +298,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textViewP9" />
 
-        <Button
-            android:id="@+id/buttonBackFaq"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:backgroundTint="#F7941E"
-            android:text="Voltar"
-            android:textColor="#FFFFFF" />
-
 
     </LinearLayout>
 

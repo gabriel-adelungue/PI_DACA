@@ -89,6 +89,7 @@ class BottomNavigationActivity : AppCompatActivity() {
                         val report = reportCardData(id, title, desc)
                         list.add(report)
                     }
+
                 }
 
                 override fun onCancelled(error: DatabaseError) {

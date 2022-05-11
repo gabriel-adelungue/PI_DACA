@@ -23,8 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:layout_marginStart="32dp"
-        android:layout_marginBottom="16dp"
-        android:text="Descrição do ocorrido"
+        android:layout_marginBottom="20dp"
+        android:text="Descrição:"
         android:textColor="#040303"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editDescricaoForm"
@@ -32,20 +32,17 @@
 
     <EditText
         android:id="@+id/editDescricaoForm"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="349dp"
+        android:layout_height="366dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="200dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFormTitle"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editCategoriaForm" />
 
     <TextView
         android:id="@+id/textViewFormTitle"
@@ -80,9 +77,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="52dp"
         android:background="#F7941E"
         android:text="Enviar"
         android:textAllCaps="false"
@@ -93,6 +89,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDescricaoForm"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

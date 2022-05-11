@@ -19,6 +19,7 @@ class FragmentoReport : Fragment() {
         binding.buttonInfra.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
             getActivity()?.startActivity(intent)
+
         }
 
         binding.buttonMaintance.setOnClickListener{
