@@ -51,5 +51,3 @@ class FragmentoReport : Fragment() {
         return binding.root
     }
 }
-
-// teste versionamento

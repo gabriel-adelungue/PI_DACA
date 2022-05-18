@@ -11,6 +11,7 @@ import com.example.pi_daca.databinding.ActivityFormBinding
 import com.example.pi_daca.data.reportCardData
 import com.example.pi_daca.data.ReportsCardObject
 import com.example.pi_daca.databinding.HomeFragmentoBinding
+import com.example.pi_daca.fragments.HomeFragmento
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
@@ -34,7 +35,7 @@ class FormActivity : AppCompatActivity() {
             ReportsCardObject.listReports.add(cardReport)
 
 
-            finish()
+            backToHome();
         }
     }
 
@@ -56,6 +57,12 @@ class FormActivity : AppCompatActivity() {
 
     fun getCurrentUser(): FirebaseUser?{
         return FirebaseAuth.getInstance().currentUser
+    }
+
+    fun backToHome() {
+        val i = Intent(this, HomeFragmento::class.java)
+        startActivity(i)
+
     }
 }
 
