@@ -21,38 +21,38 @@ class FragmentoReport : Fragment() {
 
         binding.buttonInfra.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
-            intent.putExtra("Infra-estrutura", binding.buttonInfra.text.toString())
+            intent.putExtra("categoria", binding.buttonInfra.text.toString())
             getActivity()?.startActivity(intent)
 
         }
 
         binding.buttonMaintance.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
-            intent.putExtra("Manutenção", binding.buttonMaintance.text.toString())
+            intent.putExtra("categoria", binding.buttonMaintance.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonClean.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
-            intent.putExtra("Limpeza", binding.buttonClean.text.toString())
+            intent.putExtra("categoria", binding.buttonClean.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonAdm.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
-            intent.putExtra("Administração", binding.buttonAdm.text.toString())
+            intent.putExtra("categoria", binding.buttonAdm.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonLab.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
-            intent.putExtra("Labolatório", binding.buttonLab.text.toString())
+            intent.putExtra("categoria", binding.buttonLab.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonFood.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
-            intent.putExtra("Alimentação", binding.buttonFood.text.toString())
+            intent.putExtra("categoria", binding.buttonFood.text.toString())
             getActivity()?.startActivity(intent)
         }
 

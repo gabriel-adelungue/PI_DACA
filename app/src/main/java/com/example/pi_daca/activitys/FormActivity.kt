@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.util.Log
+import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -26,26 +27,16 @@ class FormActivity : AppCompatActivity() {
         binding = ActivityFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val infraEstrutura = intent.getStringExtra("Infra-estrutura")
-        val manutencao = intent.getStringExtra("Manutenção")
-        val limpeza = intent.getStringExtra("Limpeza")
-        val administracao = intent.getStringExtra("Administração")
-        val laboratorio = intent.getStringExtra("Labolatório")
-        val alimentacao = intent.getStringExtra("Alimentação")
+        val categoria = intent.getStringExtra("categoria")
+        val descricao = intent.getStringExtra("descricao")
 
-        if(!infraEstrutura.isNullOrEmpty()) {
-            binding.editCategoriaForm.setText(infraEstrutura)
-        } else if(!manutencao.isNullOrEmpty()) {
-            binding.editCategoriaForm.setText(manutencao)
-        } else if(!limpeza.isNullOrEmpty()) {
-            binding.editCategoriaForm.setText(limpeza)
-        } else if(!administracao.isNullOrEmpty()) {
-            binding.editCategoriaForm.setText(administracao)
-        } else if(!laboratorio.isNullOrEmpty()) {
-            binding.editCategoriaForm.setText(laboratorio)
-        } else if(!alimentacao.isNullOrEmpty()) {
-            binding.editCategoriaForm.setText(alimentacao)
+        binding.editCategoriaForm.setText(categoria)
+        binding.editDescricaoForm.setText(descricao)
+
+        if (binding.editDescricaoForm.length() > 0) {
+            binding.buttonEnviarForm.visibility = View.INVISIBLE
         }
+
 
         setupFireBase()
 

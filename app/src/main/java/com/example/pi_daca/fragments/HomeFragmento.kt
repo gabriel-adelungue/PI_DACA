@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.example.pi_daca.R
+import com.example.pi_daca.activitys.FormActivity
 import com.example.pi_daca.data.ReportsCardObject
 import com.example.pi_daca.data.reportCardData
 import com.example.pi_daca.databinding.*
@@ -21,6 +22,13 @@ class HomeFragmento : Fragment() {
     lateinit var database: DatabaseReference
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = HomeFragmentoBinding.inflate(layoutInflater)
+
+        val user = getCurrentUser()
+        if(user != null){
+           val name = user.displayName
+            binding.welcomeNameId.text = "Bem-vindo, ${name}"
+        }
+
         setupFireBase()
         return binding.root
     }
@@ -29,7 +37,13 @@ class HomeFragmento : Fragment() {
 
         list.forEach{
             val cardBinding = CardBinding.inflate(layoutInflater)
+            cardBinding.root.setOnClickListener{
+                val intent = Intent(getActivity(), FormActivity::class.java)
+                intent.putExtra("categoria", cardBinding.titleReport.text.toString())
+                intent.putExtra("descricao", cardBinding.descReport.text.toString())
 
+                getActivity()?.startActivity(intent)
+            }
             cardBinding.titleReport.text = it.title
             cardBinding.descReport.text = it.desc
             binding.containerHome.addView(cardBinding.root)
