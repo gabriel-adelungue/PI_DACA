@@ -44,7 +44,7 @@ class SignUpActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.singUpBtn.setOnClickListener{
+        binding.SingUpBtn.setOnClickListener{
             validData()
         }
 

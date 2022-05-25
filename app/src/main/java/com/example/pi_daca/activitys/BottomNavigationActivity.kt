@@ -35,10 +35,10 @@ class BottomNavigationActivity : AppCompatActivity() {
                     val frag = FragmentoReport()
                     supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
                 }
-               // R.id.menuPerfil -> {
-                    //val frag = PerfilFragmento()
-                    //supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
-                //}
+                R.id.menuPerfil -> {
+                    val frag = PerfilFragmento()
+                    supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
+                }
                 else -> {
                     val i = Intent(this, FaqActivity::class.java)
                     startActivity(i)

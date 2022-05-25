@@ -9,13 +9,14 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.pi_daca.R
+import com.example.pi_daca.databinding.ActivityLoginBinding
 import com.example.pi_daca.fragments.PerfilFragmento
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding:ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding
 
     private lateinit var actionBar:ActionBar
 
@@ -42,11 +43,11 @@ class LoginActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         validUser()
 
-        binding.noAccount.setOnclickListener{
+        binding.noAccountTv.setOnClickListener(){
             startActivity(Intent(this,SignUpActivity::class.java))
         }
 
-        binding.loginBtn.setOnclickListener{
+        binding.loginBtn.setOnClickListener(){
             validData()
         }
 

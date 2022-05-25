@@ -1,15 +1,12 @@
 package com.example.pi_daca.fragments
 
-import android.app.ActionBar
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.pi_daca.R
 import com.example.pi_daca.activitys.LoginActivity
-import com.example.pi_daca.activitys.SignUpActivity
 import com.example.pi_daca.databinding.PerfilFragmentoBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -21,7 +18,7 @@ class PerfilFragmento : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = PerfilFragmentoBinding.inflate(layoutInflater)
         setupFireBase()
-        binding.logoutbtn.setOnclickListener{
+        binding.logoutbtn.setOnClickListener(){
             firebaseAuth.signOut()
             validUser()
         }
@@ -45,7 +42,8 @@ class PerfilFragmento : Fragment() {
             binding.emailTv.text = email
         }
         else{
-            startActivity(Intent(this,LoginActivity::class.java))
+            val i = Intent(null, LoginActivity::class.java)
+            startActivity(i)
         }
     }
 
