@@ -3,31 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/fragmento_report.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/gabri/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/activity_form.xml" value="0.25" />
-        <entry key="..\:/Users/gabri/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/fragmento_report.xml" value="0.25" />
-        <entry key="..\:/Users/gabri/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/home_fragmento.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/activity_faq.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/activity_form.xml" value="0.5" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/activity_teste_views.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/card.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/card_item.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/fragmento_home.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/fragmento_report.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/home_fragmento.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/gabriel.acassiano/AndroidStudioProjects/PI_DACA/app/src/main/res/layout/perfil_fragmento.xml" value="0.27291666666666664" />
-        <entry key="app/src/main/res/layout/activity_bottom_navigation.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_faq.xml" value="0.4240318264572672" />
-        <entry key="app/src/main/res/layout/activity_form.xml" value="0.4005208333333333" />
+        <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/activity_login.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/activity_sign_up.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/perfil_fragmento.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_faq.xml" value="0.2790410359700521" />
         <entry key="app/src/main/res/layout/activity_teste_views.xml" value="0.20208333333333334" />
-        <entry key="app/src/main/res/layout/card.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/card_item.xml" value="0.4541386922200521" />
+        <entry key="app/src/main/res/layout/card_item.xml" value="0.20208333333333334" />
         <entry key="app/src/main/res/layout/fragmento_form.xml" value="0.4005208333333333" />
-        <entry key="app/src/main/res/layout/fragmento_home.xml" value="0.4256718953450521" />
+        <entry key="app/src/main/res/layout/fragmento_home.xml" value="0.2793767293294271" />
         <entry key="app/src/main/res/layout/fragmento_report.xml" value="0.43440093994140627" />
-        <entry key="app/src/main/res/layout/home_fragmento.xml" value="0.4005208333333333" />
-        <entry key="app/src/main/res/layout/report_card.xml" value="0.1" />
       </map>
     </option>
   </component>

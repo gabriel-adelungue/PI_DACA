@@ -2,4 +2,5 @@
     <string name="app_name">PI_DACA</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_account">Não tem conta? <b>Cadastrar</b></string>
 </resources>

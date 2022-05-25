@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pi_daca">
 
+    <uses-permission android:name="android.permission.INTERNET " />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PI_DACA">
+
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.SignUpActivity"
+            android:exported="false" />
         <activity
             android:name=".activitys.FormActivity"
             android:exported="false" />
@@ -23,8 +32,8 @@
         </activity>
         <activity
             android:name=".activitys.BottomNavigationActivity"
-            android:label="Projeto Integrador"
-            android:exported="true">
+            android:exported="true"
+            android:label="Projeto Integrador">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

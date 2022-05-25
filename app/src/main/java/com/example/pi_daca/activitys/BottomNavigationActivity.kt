@@ -8,13 +8,14 @@ import android.widget.Toast
 import com.example.pi_daca.R
 import com.example.pi_daca.data.reportCardData
 import com.example.pi_daca.databinding.ActivityBottomNavigationBinding
-import com.example.pi_daca.databinding.HomeFragmentoBinding
 import com.example.pi_daca.fragments.FragmentoReport
 import com.example.pi_daca.fragments.HomeFragmento
+import com.example.pi_daca.fragments.PerfilFragmento
 import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
+import com.google.firebase.database.DatabaseReference
 
 class BottomNavigationActivity : AppCompatActivity() {
     lateinit var binding: ActivityBottomNavigationBinding
@@ -34,6 +35,10 @@ class BottomNavigationActivity : AppCompatActivity() {
                     val frag = FragmentoReport()
                     supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
                 }
+               // R.id.menuPerfil -> {
+                    //val frag = PerfilFragmento()
+                    //supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
+                //}
                 else -> {
                     val i = Intent(this, FaqActivity::class.java)
                     startActivity(i)
