@@ -2,6 +2,7 @@ package com.example.pi_daca.activitys
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
@@ -24,6 +25,27 @@ class FormActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val infraEstrutura = intent.getStringExtra("Infra-estrutura")
+        val manutencao = intent.getStringExtra("Manutenção")
+        val limpeza = intent.getStringExtra("Limpeza")
+        val administracao = intent.getStringExtra("Administração")
+        val laboratorio = intent.getStringExtra("Labolatório")
+        val alimentacao = intent.getStringExtra("Alimentação")
+
+        if(!infraEstrutura.isNullOrEmpty()) {
+            binding.editCategoriaForm.setText(infraEstrutura)
+        } else if(!manutencao.isNullOrEmpty()) {
+            binding.editCategoriaForm.setText(manutencao)
+        } else if(!limpeza.isNullOrEmpty()) {
+            binding.editCategoriaForm.setText(limpeza)
+        } else if(!administracao.isNullOrEmpty()) {
+            binding.editCategoriaForm.setText(administracao)
+        } else if(!laboratorio.isNullOrEmpty()) {
+            binding.editCategoriaForm.setText(laboratorio)
+        } else if(!alimentacao.isNullOrEmpty()) {
+            binding.editCategoriaForm.setText(alimentacao)
+        }
 
         setupFireBase()
 

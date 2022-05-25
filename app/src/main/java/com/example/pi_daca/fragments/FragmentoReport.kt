@@ -2,6 +2,7 @@ package com.example.pi_daca.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,36 +17,46 @@ class FragmentoReport : Fragment() {
 
     binding = FragmentoReportBinding.inflate(layoutInflater)
 
+
+
         binding.buttonInfra.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
+            intent.putExtra("Infra-estrutura", binding.buttonInfra.text.toString())
             getActivity()?.startActivity(intent)
 
         }
 
         binding.buttonMaintance.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
+            intent.putExtra("Manutenção", binding.buttonMaintance.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonClean.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
+            intent.putExtra("Limpeza", binding.buttonClean.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonAdm.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
+            intent.putExtra("Administração", binding.buttonAdm.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonLab.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
+            intent.putExtra("Labolatório", binding.buttonLab.text.toString())
             getActivity()?.startActivity(intent)
         }
 
         binding.buttonFood.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
+            intent.putExtra("Alimentação", binding.buttonFood.text.toString())
             getActivity()?.startActivity(intent)
         }
+
+
 
 
         return binding.root
