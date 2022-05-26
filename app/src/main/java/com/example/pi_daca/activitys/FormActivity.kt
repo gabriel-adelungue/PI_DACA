@@ -13,6 +13,7 @@ import com.example.pi_daca.databinding.ActivityFormBinding
 import com.example.pi_daca.data.reportCardData
 import com.example.pi_daca.data.ReportsCardObject
 import com.example.pi_daca.databinding.HomeFragmentoBinding
+import com.example.pi_daca.fragments.FragmentoReport
 import com.example.pi_daca.fragments.HomeFragmento
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -35,6 +36,7 @@ class FormActivity : AppCompatActivity() {
         binding.editDescricaoForm.setText(descricao)
 
         if (binding.editDescricaoForm.length() > 0) {
+
             binding.buttonEnviarForm.visibility = View.INVISIBLE
         }
 
@@ -43,13 +45,9 @@ class FormActivity : AppCompatActivity() {
 
         binding.buttonEnviarForm.setOnClickListener{
             insert()
-            val cardReport = reportCardData(title=binding.editCategoriaForm.text.toString(),
-            desc=binding.editDescricaoForm.text.toString())
+            val intent = Intent (this, FragmentoReport::class.java)
+            startActivity(intent)
 
-            ReportsCardObject.listReports.add(cardReport)
-
-
-            backToHome();
         }
     }
 
@@ -65,7 +63,7 @@ class FormActivity : AppCompatActivity() {
         val user = getCurrentUser()
 
         if(user != null){
-            database = FirebaseDatabase.getInstance().reference.child(user.uid)
+            database = FirebaseDatabase.getInstance().reference
         }
     }
 
@@ -73,10 +71,5 @@ class FormActivity : AppCompatActivity() {
         return FirebaseAuth.getInstance().currentUser
     }
 
-    fun backToHome() {
-        val i = Intent(this, HomeFragmento::class.java)
-        startActivity(i)
-
-    }
 }
 
