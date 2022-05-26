@@ -28,6 +28,7 @@ class FormActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val categoria = intent.getStringExtra("categoria")
+        binding.editCategoriaForm.setEnabled(false)
         val descricao = intent.getStringExtra("descricao")
 
         binding.editCategoriaForm.setText(categoria)
