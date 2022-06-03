@@ -31,9 +31,11 @@ class FormActivity : AppCompatActivity() {
         val categoria = intent.getStringExtra("categoria")
         binding.editCategoriaForm.setEnabled(false)
         val descricao = intent.getStringExtra("descricao")
+        val localizacao = intent.getStringExtra("localizacao")
 
         binding.editCategoriaForm.setText(categoria)
         binding.editDescricaoForm.setText(descricao)
+        binding.editLocalizacaoForm.setText(localizacao)
 
         if (binding.editDescricaoForm.length() > 0) {
 
@@ -53,7 +55,7 @@ class FormActivity : AppCompatActivity() {
 
     fun insert(){
         val report = reportCardData(title=binding.editCategoriaForm.text.toString(),
-            desc=binding.editDescricaoForm.text.toString())
+            desc=binding.editDescricaoForm.text.toString(), loc = binding.editLocalizacaoForm.text.toString())
         val newNode = database.child("reports").push()
         report.id = newNode.key
         newNode.setValue(report)
