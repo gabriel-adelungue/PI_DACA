@@ -85,7 +85,6 @@ class HomeFragmento : Fragment() {
     fun getCurrentUser(): FirebaseUser?{
         return FirebaseAuth.getInstance().currentUser
     }
-
 }
 
 
