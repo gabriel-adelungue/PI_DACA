@@ -18,12 +18,10 @@ class FragmentoReport : Fragment() {
     binding = FragmentoReportBinding.inflate(layoutInflater)
 
 
-
         binding.buttonInfra.setOnClickListener{
             val intent = Intent (getActivity(), FormActivity::class.java)
             intent.putExtra("categoria", binding.buttonInfra.text.toString())
             getActivity()?.startActivity(intent)
-
         }
 
         binding.buttonMaintance.setOnClickListener{
