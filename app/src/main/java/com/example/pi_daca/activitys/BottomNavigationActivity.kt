@@ -16,10 +16,18 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import com.google.firebase.database.DatabaseReference
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.util.*
+import kotlin.collections.HashMap
 
 class BottomNavigationActivity : AppCompatActivity() {
     lateinit var binding: ActivityBottomNavigationBinding
     lateinit var database: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBottomNavigationBinding.inflate(layoutInflater)
@@ -76,6 +84,12 @@ class BottomNavigationActivity : AppCompatActivity() {
     }
 
     fun setupFireBase(){
+
+        val date = Calendar.getInstance().time
+        var dateTimeFormat = SimpleDateFormat("yyyy/MM/dd HH:mm:ss", Locale.getDefault())
+
+        var dateAndroid = dateTimeFormat.format(date)
+
         val user = getCurrentUser()
 
         if(user != null){
@@ -92,7 +106,8 @@ class BottomNavigationActivity : AppCompatActivity() {
                         val desc = map.get("desc") as String
                         val loc = map.get("loc") as String
 
-                        val report = reportCardData(id, title, desc, loc)
+
+                        val report = reportCardData(id, title, desc, loc, dateAndroid)
                         list.add(report)
                     }
 
@@ -107,4 +122,5 @@ class BottomNavigationActivity : AppCompatActivity() {
             database.addValueEventListener(valueEventListener)
         }
     }
+
 }
