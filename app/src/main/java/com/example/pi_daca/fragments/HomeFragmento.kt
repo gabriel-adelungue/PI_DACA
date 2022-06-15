@@ -72,7 +72,7 @@ class HomeFragmento : Fragment() {
                         val loc = map.get("loc") as String
                         val data = map.get("data") as String
 
-                        val report = reportCardData(id, title, desc, loc,data)
+                        val report = reportCardData(id, title, desc, loc, data)
                         list.add(report)
                     }
                     refreshUi(list)
