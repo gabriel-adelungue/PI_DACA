@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/card.xml" value="0.3875" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/card_item.xml" value="0.3875" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/fragmento_report.xml" value="0.3875" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/home_fragmento.xml" value="0.3875" />
         <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/activity_login.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/activity_sign_up.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/perfil_fragmento.xml" value="0.1" />
