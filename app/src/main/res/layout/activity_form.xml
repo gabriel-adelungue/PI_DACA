@@ -15,6 +15,7 @@
         android:text="Categoria da Reclamação:"
         android:textColor="#040303"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editCategoriaForm"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -27,6 +28,7 @@
         android:text="Localização:"
         android:textColor="#040303"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editLocalizacaoForm"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -39,6 +41,7 @@
         android:text="Data ocorrencia:"
         android:textColor="#040303"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editDataForm"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -51,6 +54,7 @@
         android:text="Descrição:"
         android:textColor="#040303"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editDescricaoForm"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -154,5 +158,24 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editLocalizacaoForm" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:elegantTextHeight="true"
+        android:text="Pendente"
+        android:textAlignment="textEnd"
+        android:textColor="#040303"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Pendente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
