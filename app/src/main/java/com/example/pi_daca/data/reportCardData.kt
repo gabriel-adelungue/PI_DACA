@@ -6,5 +6,6 @@ data class reportCardData(
     var title: String,
     var desc: String,
     var loc: String,
-    var data: String
+    var data: String,
+    var status: String
 )

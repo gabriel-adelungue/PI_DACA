@@ -105,8 +105,9 @@ class BottomNavigationActivity : AppCompatActivity() {
                         val desc = map.get("desc") as String
                         val loc = map.get("loc") as String
                         val data = map.get("data") as String
+                        val status = map.get("status") as String
 
-                        val report = reportCardData(id, title, desc, loc, data)
+                        val report = reportCardData(id, title, desc, loc, data, status)
                         list.add(report)
                     }
 
