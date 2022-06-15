@@ -54,18 +54,22 @@ class BottomNavigationActivity : AppCompatActivity() {
                     //supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
                 }
             }
-
             true
         }
 
         if(getCurrentUser()==null){
-            val providers = arrayListOf(AuthUI.IdpConfig.EmailBuilder().build())
+            val providers = arrayListOf(AuthUI.IdpConfig.EmailBuilder().build(), AuthUI.IdpConfig.GoogleBuilder().build())
+
             startActivityForResult(
-                AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers).build(), 1)
+                AuthUI.getInstance()
+                    .createSignInIntentBuilder()
+                    .setAvailableProviders(providers)
+                    .setLogo(R.drawable.ic_logo_pro_report)
+                    .setTheme(R.style.LoginTheme)
+                    .build(), 1)
         }else{
             setupFireBase()
         }
-
     }
 
     fun getCurrentUser(): FirebaseUser?{

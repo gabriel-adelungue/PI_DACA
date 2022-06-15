@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/drawable/ic_logo_pro_report.xml" value="0.3385" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/activity_form.xml" value="0.3546195652173913" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/activity_login.xml" value="0.26132246376811596" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/activity_sign_up.xml" value="0.26132246376811596" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/activity_teste_views.xml" value="0.26132246376811596" />
         <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/card.xml" value="0.3875" />
         <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/card_item.xml" value="0.3875" />
         <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/fragmento_report.xml" value="0.3875" />
         <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/home_fragmento.xml" value="0.3875" />
+        <entry key="..\:/Users/Caco Abud/Documents/GitHub/PI_DACA/app/src/main/res/layout/perfil_fragmento.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/activity_login.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/activity_sign_up.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Samsung/Desktop/PI_DACA/app/src/main/res/layout/perfil_fragmento.xml" value="0.1" />
