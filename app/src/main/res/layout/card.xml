@@ -47,5 +47,16 @@
             android:text="TextView"
             android:textColor="#131313"
             android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/statusReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textColor="#131313"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
