@@ -85,11 +85,6 @@ class BottomNavigationActivity : AppCompatActivity() {
 
     fun setupFireBase(){
 
-        val date = Calendar.getInstance().time
-        var dateTimeFormat = SimpleDateFormat("yyyy/MM/dd HH:mm:ss", Locale.getDefault())
-
-        var dateAndroid = dateTimeFormat.format(date)
-
         val user = getCurrentUser()
 
         if(user != null){
@@ -105,9 +100,9 @@ class BottomNavigationActivity : AppCompatActivity() {
                         val title = map.get("title") as String
                         val desc = map.get("desc") as String
                         val loc = map.get("loc") as String
+                        val data = map.get("data") as String
 
-
-                        val report = reportCardData(id, title, desc, loc, dateAndroid)
+                        val report = reportCardData(id, title, desc, loc, data)
                         list.add(report)
                     }
 

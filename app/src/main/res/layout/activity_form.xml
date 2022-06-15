@@ -31,6 +31,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/textDataForm"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:text="Data ocorrencia:"
+        android:textColor="#040303"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <TextView
         android:id="@+id/textDescricaoForm"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
@@ -47,7 +58,7 @@
         android:layout_width="0dp"
         android:layout_height="213dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="164dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:gravity="top"
@@ -57,6 +68,7 @@
         android:textAlignment="inherit"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editLocalizacaoForm" />
 
@@ -127,5 +139,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDescricaoForm"
         app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editDataForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="321dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
