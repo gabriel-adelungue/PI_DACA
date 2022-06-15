@@ -42,12 +42,14 @@ class HomeFragmento : Fragment() {
                 intent.putExtra("categoria", cardBinding.titleReport.text.toString())
                 intent.putExtra("descricao", cardBinding.descReport.text.toString())
                 intent.putExtra("localizacao", cardBinding.locReport.text.toString())
+                intent.putExtra("data", cardBinding.dataReport.text.toString())
 
                 getActivity()?.startActivity(intent)
             }
             cardBinding.titleReport.text = it.title
             cardBinding.descReport.text = it.desc
             cardBinding.locReport.text = it.loc
+            cardBinding.dataReport.text = it.data
             binding.containerHome.addView(cardBinding.root)
         }
     }
@@ -68,8 +70,9 @@ class HomeFragmento : Fragment() {
                         val title = map.get("title") as String
                         val desc = map.get("desc") as String
                         val loc = map.get("loc") as String
+                        val data = map.get("data") as String
 
-                        val report = reportCardData(id, title, desc, loc)
+                        val report = reportCardData(id, title, desc, loc,data)
                         list.add(report)
                     }
                     refreshUi(list)
