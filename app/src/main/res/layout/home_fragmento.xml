@@ -15,7 +15,7 @@
         android:fontFamily="sans-serif"
         android:gravity="center_vertical"
         android:paddingStart="24dp"
-        android:text="Bem-vindo,\nJoão"
+        android:text="Bem-vindo,\n"
         android:textAlignment="viewStart"
         android:textColor="#FFFFFF"
         android:textSize="24sp"

@@ -33,15 +33,22 @@ class FormActivity : AppCompatActivity() {
         val descricao = intent.getStringExtra("descricao")
         val localizacao = intent.getStringExtra("localizacao")
         val data = intent.getStringExtra("data")
+        val status = intent.getStringExtra("status")
 
         binding.editCategoriaForm.setText(categoria)
         binding.editDescricaoForm.setText(descricao)
         binding.editLocalizacaoForm.setText(localizacao)
         binding.editDataForm.setText(data)
+        binding.textStatus.setText(status)
 
         if (binding.editDescricaoForm.length() > 0) {
 
             binding.buttonEnviarForm.visibility = View.INVISIBLE
+            binding.editLocalizacaoForm.setEnabled(false)
+            binding.editDescricaoForm.setEnabled(false)
+            binding.editDataForm.setEnabled(false)
+        } else {
+            binding.textStatus.visibility = View.INVISIBLE
         }
 
 
@@ -57,7 +64,8 @@ class FormActivity : AppCompatActivity() {
 
     fun insert(){
         val report = reportCardData(title=binding.editCategoriaForm.text.toString(),
-            desc=binding.editDescricaoForm.text.toString(), loc = binding.editLocalizacaoForm.text.toString(), data = binding.editDataForm.text.toString())
+            desc=binding.editDescricaoForm.text.toString(), loc = binding.editLocalizacaoForm.text.toString(), data = binding.editDataForm.text.toString(),
+            status= "Pendente")
         val newNode = database.child("reports").push()
         report.id = newNode.key
         newNode.setValue(report)
