@@ -50,8 +50,6 @@ class BottomNavigationActivity : AppCompatActivity() {
                 else -> {
                     val i = Intent(this, FaqActivity::class.java)
                     startActivity(i)
-                    //val frag = FaqActivity()
-                    //supportFragmentManager.beginTransaction().replace(R.id.container, frag).commit()
                 }
             }
             true
@@ -110,7 +108,6 @@ class BottomNavigationActivity : AppCompatActivity() {
                         val report = reportCardData(id, title, desc, loc, data, status)
                         list.add(report)
                     }
-
                 }
 
                 override fun onCancelled(error: DatabaseError) {
@@ -122,5 +119,4 @@ class BottomNavigationActivity : AppCompatActivity() {
             database.addValueEventListener(valueEventListener)
         }
     }
-
 }

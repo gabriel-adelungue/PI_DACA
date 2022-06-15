@@ -58,7 +58,6 @@ class FormActivity : AppCompatActivity() {
             insert()
             val intent = Intent (this, FragmentoReport::class.java)
             startActivity(intent)
-
         }
     }
 
@@ -82,6 +81,5 @@ class FormActivity : AppCompatActivity() {
     fun getCurrentUser(): FirebaseUser?{
         return FirebaseAuth.getInstance().currentUser
     }
-
 }
 
